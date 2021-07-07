@@ -1,5 +1,57 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato&family=Sue+Ellen+Francisco&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 100vh;
+  background-image: url(./ring.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.778);
+  z-index: 1;
+}
+
+.text-box {
+  max-width: 500px;
+  z-index: 2;
+}
+
+h1 {
+  font-family: 'Bad Script', cursive;
+}
+
+h2,
+h3 {
+  font-family: 'Lato', sans-serif;
+}
+
+h4 {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 2rem;
+  line-height: 0;
+  transform: rotate(-4deg);
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  color: rgb(111, 111, 111);
 }
